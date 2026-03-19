@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue&family=Fira+Code&family=Inter:wght@400;700;900&family=Lato:wght@400;700;900&family=Lobster&family=Lora:wght@400;700;900&family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;700;900&family=Oswald:wght@400;700;900&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .ProseMirror ul {
+    list-style-type: disc !important;
+    padding-left: 1.5rem !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .ProseMirror ol {
+    list-style-type: decimal !important;
+    padding-left: 1.5rem !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .ProseMirror blockquote {
+    border-left: 4px solid #d4d4d8 !important;
+    padding-left: 1rem !important;
+    font-style: italic !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #52525b;
+  }
+
+  .ProseMirror ul p,
+  .ProseMirror ol p {
+    display: inline !important;
+  }
+}
